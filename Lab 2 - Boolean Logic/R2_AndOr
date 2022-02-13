@@ -1,0 +1,11 @@
+// Lab 2 R2_AndOr
+(*	PB1 = NO
+		PB2 = NC
+		PB3 = NC
+		PB4 = NO *)
+
+PL1 := NOT PB1 & PB3;					// PL1 on when PB1 & PB3 released
+PL2 := NOT PB2 OR PB4;				// PL2 on when PB2 & PB4 pressed
+PL3 := SS & (PB1 OR NOT PB3);	// PL3 on when SS closed & PB1 or PB3 pressed
+PL4 := (PB1 & NOT PB2) OR			// PL4 on when PB1 & PB2 pressed or PB3 & PB4 pressed
+	   	 (NOT PB3 & PB4);

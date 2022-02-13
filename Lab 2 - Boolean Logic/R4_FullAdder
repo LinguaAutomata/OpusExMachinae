@@ -1,0 +1,21 @@
+// LAB 2 R4_FullAdder
+(*
+	A	B	C		SUM_OUT	CARRY_OUT
+	0	0	1			1					0
+	0	1	0			1					0
+	1	0	0			1					0
+	1	1	1			1					1
+	0	1	1			0					1
+	1	1	0			0					1
+	1	0	1			0					1
+*)
+
+SUM_OUT   := (NOT A & NOT B & C) OR
+			 			 (NOT A & B & NOT C) OR
+						 (A & NOT B & NOT C) OR
+						 (A & B & C);
+
+CARRY_OUT := (NOT A & B & C) OR
+						 (A & NOT B & C) OR
+						 (A & B & NOT C) OR
+						 (A & B & C);

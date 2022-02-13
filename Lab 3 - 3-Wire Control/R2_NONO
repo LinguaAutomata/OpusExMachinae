@@ -1,0 +1,7 @@
+// Lab 3 R2_NONO
+(*
+    PB1 = NO PB
+    PB2 = NO PB
+*)
+
+Motor := NOT PB2 & (PB3 OR Motor);

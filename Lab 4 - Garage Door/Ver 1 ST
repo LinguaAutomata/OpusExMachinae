@@ -1,0 +1,21 @@
+// Lab 4 Garage Door
+(*
+    Version 1
+    Each PB has a single function
+*)
+
+Open_LT       := Top_Sensor     & NOT Bottom_Sensor;
+Closed_LT     := NOT Top_Sensor & Bottom_Sensor;
+Ajar_LT       := NOT Top_Sensor & NOT Bottom_Sensor;
+Fault_LT      := Top_Sensor     & Bottom_Sensor;
+Motor_Stopped := NOT Motor_Up   & NOT Motor_Down;
+
+Motor_Up      := NOT Stop_PB &
+                 ((Up_PB & NOT Down_PB) OR Motor_Up) &
+                 NOT Motor_Down &
+                 NOT Top_Sensor;
+
+Motor_Down    := NOT Stop_PB &
+                 ((Down_PB & NOT Up_PB) OR Motor_Down) &
+                 NOT Motor_Up &
+                 NOT Bottom_Sensor;

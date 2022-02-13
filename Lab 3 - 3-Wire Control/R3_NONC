@@ -1,0 +1,7 @@
+// Lab 3 R3_NONC
+(*
+    PB3 = NO PB
+    PB4 = NC PB
+*)
+
+Motor := NOT PB3 & (NOT PB4 OR Motor);
