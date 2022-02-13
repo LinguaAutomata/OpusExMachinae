@@ -1,4 +1,4 @@
 // Lab 2 R3_TruthTable
 
-OutputXOR := A XOR B;		    // True when A or B are 1 (but not both)
-OutputNOR := NOT (A OR B);	// True when A and/or B are 0
+OutputXOR := A XOR B;       // True when A or B are 1 (but not both)
+OutputNOR := NOT (A OR B);  // True when A and/or B are 0
