@@ -1,10 +1,12 @@
 // Lab 2 R1_XICXIO
-(*	PB1 = NO
-		PB2 = NC
-		PB3 = NC
-		PB4 = NO *)
+(*
+	PB1 = NO
+	PB2 = NC
+	PB3 = NC
+	PB4 = NO
+*)
 
-PL1 := PB1;				// PL1 on when PB1 pressed
+PL1 := PB1;		// PL1 on when PB1 pressed
 PL2 := NOT PB2;		// PL2 on when PB2 pressed
-PL3 := PB3;				// PL3 off when PB3 pressed
+PL3 := PB3;		// PL3 off when PB3 pressed
 PL4 := NOT PB4;		// PL4 off when PB4 pressed
